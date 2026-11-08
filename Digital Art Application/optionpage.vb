@@ -1,8 +1,7 @@
-﻿Public Class Form2
-
+﻿Public Class option_page
     Private Sub artist_button_Click(sender As Object, e As EventArgs) Handles artist_button.Click
 
-        Dim categoryPage As New Form3()
+        Dim categoryPage As New home_buyer()
         categoryPage.Show()
         Me.Hide()
 
@@ -10,14 +9,14 @@
 
     Private Sub buyer_button_Click(sender As Object, e As EventArgs) Handles buyer_button.Click
 
-        Dim categoryPage As New Form3()
+        Dim categoryPage As New home_buyer()
         categoryPage.Show()
         Me.Hide()
 
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Dim categoryPage As New Form1()
+        Dim categoryPage As New homepage()
         categoryPage.Show()
         Me.Hide()
 
@@ -33,4 +32,13 @@
         End If
     End Sub
 
+    Private Sub Label5_Click(sender As Object, e As EventArgs) Handles Label5.Click
+
+    End Sub
+
+    Private Sub Form2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Me.FormBorderStyle = FormBorderStyle.None
+
+        Me.WindowState = FormWindowState.Maximized
+    End Sub
 End Class

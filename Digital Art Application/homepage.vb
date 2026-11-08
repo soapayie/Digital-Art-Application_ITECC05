@@ -2,7 +2,7 @@
 Imports System.Windows
 Imports MySql.Data.MySqlClient
 
-Public Class Form1
+Public Class homepage
 
     ' MySQL Connection
     Private connectionString As String =
@@ -12,6 +12,10 @@ Public Class Form1
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
         password_txtbox.UseSystemPasswordChar = True
+
+        Me.FormBorderStyle = FormBorderStyle.None
+
+        Me.WindowState = FormWindowState.Maximized
 
     End Sub
 
@@ -68,7 +72,7 @@ Public Class Form1
                                         MessageBoxIcon.Information)
 
                         ' Open Form2
-                        Form2.Show()
+                        option_page.Show()
 
                         ' Hide Login Form
                         Me.Hide()
@@ -100,4 +104,7 @@ Public Class Form1
 
     End Sub
 
+    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
+
+    End Sub
 End Class

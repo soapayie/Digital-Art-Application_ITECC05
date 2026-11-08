@@ -1,9 +1,10 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Form3
+﻿Imports System.Windows
+
+Public Class home_buyer
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +21,7 @@ Partial Class Form3
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.login_button = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
@@ -28,18 +29,21 @@ Partial Class Form3
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.viewportfolio_soapy = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.viewportfolio_thynn = New System.Windows.Forms.Button()
         Me.Label5 = New System.Windows.Forms.Label()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Panel4 = New System.Windows.Forms.Panel()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Label10 = New System.Windows.Forms.Label()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.Panel5 = New System.Windows.Forms.Panel()
         Me.Button5 = New System.Windows.Forms.Button()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
@@ -50,19 +54,16 @@ Partial Class Form3
         Me.Label13 = New System.Windows.Forms.Label()
         Me.Panel6 = New System.Windows.Forms.Panel()
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel3.SuspendLayout()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel4.SuspendLayout()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel5.SuspendLayout()
         Me.Panel6.SuspendLayout()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'login_button
@@ -70,10 +71,10 @@ Partial Class Form3
         Me.login_button.BackColor = System.Drawing.Color.LemonChiffon
         Me.login_button.Font = New System.Drawing.Font("Arial Rounded MT Bold", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.login_button.ForeColor = System.Drawing.Color.FromArgb(CType(CType(148, Byte), Integer), CType(CType(93, Byte), Integer), CType(CType(155, Byte), Integer))
-        Me.login_button.Location = New System.Drawing.Point(948, 18)
+        Me.login_button.Location = New System.Drawing.Point(1674, 18)
         Me.login_button.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.login_button.Name = "login_button"
-        Me.login_button.Size = New System.Drawing.Size(127, 31)
+        Me.login_button.Size = New System.Drawing.Size(142, 31)
         Me.login_button.TabIndex = 4
         Me.login_button.Text = "BACK"
         Me.login_button.UseVisualStyleBackColor = False
@@ -86,7 +87,7 @@ Partial Class Form3
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1099, 60)
+        Me.Panel1.Size = New System.Drawing.Size(2155, 60)
         Me.Panel1.TabIndex = 5
         '
         'Label1
@@ -96,9 +97,9 @@ Partial Class Form3
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.Label1.Location = New System.Drawing.Point(33, 7)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(124, 43)
+        Me.Label1.Size = New System.Drawing.Size(202, 43)
         Me.Label1.TabIndex = 6
-        Me.Label1.Text = "TITLE"
+        Me.Label1.Text = "COMMISH"
         '
         'Panel2
         '
@@ -106,7 +107,7 @@ Partial Class Form3
         Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(220, Byte), Integer), CType(CType(190, Byte), Integer), CType(CType(216, Byte), Integer))
         Me.Panel2.Controls.Add(Me.Label6)
         Me.Panel2.Controls.Add(Me.Label3)
-        Me.Panel2.Controls.Add(Me.Button1)
+        Me.Panel2.Controls.Add(Me.viewportfolio_soapy)
         Me.Panel2.Controls.Add(Me.Label2)
         Me.Panel2.Controls.Add(Me.PictureBox1)
         Me.Panel2.Location = New System.Drawing.Point(37, 135)
@@ -137,18 +138,18 @@ Partial Class Form3
         Me.Label3.TabIndex = 9
         Me.Label3.Text = "Illustrator and Layout Artist"
         '
-        'Button1
+        'viewportfolio_soapy
         '
-        Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(193, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(189, Byte), Integer))
-        Me.Button1.Font = New System.Drawing.Font("Arial Rounded MT Bold", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.ForeColor = System.Drawing.Color.FloralWhite
-        Me.Button1.Location = New System.Drawing.Point(36, 388)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(235, 47)
-        Me.Button1.TabIndex = 8
-        Me.Button1.Text = "View Portfolio"
-        Me.Button1.UseVisualStyleBackColor = False
+        Me.viewportfolio_soapy.BackColor = System.Drawing.Color.FromArgb(CType(CType(193, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(189, Byte), Integer))
+        Me.viewportfolio_soapy.Font = New System.Drawing.Font("Arial Rounded MT Bold", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.viewportfolio_soapy.ForeColor = System.Drawing.Color.FloralWhite
+        Me.viewportfolio_soapy.Location = New System.Drawing.Point(36, 388)
+        Me.viewportfolio_soapy.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.viewportfolio_soapy.Name = "viewportfolio_soapy"
+        Me.viewportfolio_soapy.Size = New System.Drawing.Size(235, 47)
+        Me.viewportfolio_soapy.TabIndex = 8
+        Me.viewportfolio_soapy.Text = "View Portfolio"
+        Me.viewportfolio_soapy.UseVisualStyleBackColor = False
         '
         'Label2
         '
@@ -161,13 +162,24 @@ Partial Class Form3
         Me.Label2.TabIndex = 7
         Me.Label2.Text = "smile.yie_"
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.ErrorImage = Nothing
+        Me.PictureBox1.Location = New System.Drawing.Point(29, 28)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(243, 190)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox1.TabIndex = 0
+        Me.PictureBox1.TabStop = False
+        '
         'Panel3
         '
         Me.Panel3.AutoScroll = True
         Me.Panel3.BackColor = System.Drawing.Color.FromArgb(CType(CType(220, Byte), Integer), CType(CType(190, Byte), Integer), CType(CType(216, Byte), Integer))
         Me.Panel3.Controls.Add(Me.Label7)
         Me.Panel3.Controls.Add(Me.Label4)
-        Me.Panel3.Controls.Add(Me.Button2)
+        Me.Panel3.Controls.Add(Me.viewportfolio_thynn)
         Me.Panel3.Controls.Add(Me.Label5)
         Me.Panel3.Controls.Add(Me.PictureBox2)
         Me.Panel3.Location = New System.Drawing.Point(395, 135)
@@ -198,18 +210,18 @@ Partial Class Form3
         Me.Label4.TabIndex = 9
         Me.Label4.Text = "Illustrator and 2D Artist"
         '
-        'Button2
+        'viewportfolio_thynn
         '
-        Me.Button2.BackColor = System.Drawing.Color.FromArgb(CType(CType(193, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(189, Byte), Integer))
-        Me.Button2.Font = New System.Drawing.Font("Arial Rounded MT Bold", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.ForeColor = System.Drawing.Color.FloralWhite
-        Me.Button2.Location = New System.Drawing.Point(36, 388)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(235, 47)
-        Me.Button2.TabIndex = 8
-        Me.Button2.Text = "View Portfolio"
-        Me.Button2.UseVisualStyleBackColor = False
+        Me.viewportfolio_thynn.BackColor = System.Drawing.Color.FromArgb(CType(CType(193, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(189, Byte), Integer))
+        Me.viewportfolio_thynn.Font = New System.Drawing.Font("Arial Rounded MT Bold", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.viewportfolio_thynn.ForeColor = System.Drawing.Color.FloralWhite
+        Me.viewportfolio_thynn.Location = New System.Drawing.Point(36, 388)
+        Me.viewportfolio_thynn.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.viewportfolio_thynn.Name = "viewportfolio_thynn"
+        Me.viewportfolio_thynn.Size = New System.Drawing.Size(235, 47)
+        Me.viewportfolio_thynn.TabIndex = 8
+        Me.viewportfolio_thynn.Text = "View Portfolio"
+        Me.viewportfolio_thynn.UseVisualStyleBackColor = False
         '
         'Label5
         '
@@ -221,6 +233,16 @@ Partial Class Form3
         Me.Label5.Size = New System.Drawing.Size(90, 32)
         Me.Label5.TabIndex = 7
         Me.Label5.Text = "thynn"
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.Location = New System.Drawing.Point(29, 28)
+        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(243, 190)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox2.TabIndex = 0
+        Me.PictureBox2.TabStop = False
         '
         'Panel4
         '
@@ -283,6 +305,16 @@ Partial Class Form3
         Me.Label10.TabIndex = 7
         Me.Label10.Text = "Mhica"
         '
+        'PictureBox3
+        '
+        Me.PictureBox3.Location = New System.Drawing.Point(29, 28)
+        Me.PictureBox3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.PictureBox3.Size = New System.Drawing.Size(243, 190)
+        Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox3.TabIndex = 0
+        Me.PictureBox3.TabStop = False
+        '
         'Panel5
         '
         Me.Panel5.BackColor = System.Drawing.Color.FromArgb(CType(CType(234, Byte), Integer), CType(CType(215, Byte), Integer), CType(CType(236, Byte), Integer))
@@ -292,7 +324,7 @@ Partial Class Form3
         Me.Panel5.Location = New System.Drawing.Point(0, 57)
         Me.Panel5.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Panel5.Name = "Panel5"
-        Me.Panel5.Size = New System.Drawing.Size(1099, 43)
+        Me.Panel5.Size = New System.Drawing.Size(2155, 43)
         Me.Panel5.TabIndex = 9
         '
         'Button5
@@ -300,12 +332,12 @@ Partial Class Form3
         Me.Button5.BackColor = System.Drawing.Color.FromArgb(CType(CType(148, Byte), Integer), CType(CType(93, Byte), Integer), CType(CType(155, Byte), Integer))
         Me.Button5.Font = New System.Drawing.Font("Arial Rounded MT Bold", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button5.ForeColor = System.Drawing.Color.FloralWhite
-        Me.Button5.Location = New System.Drawing.Point(939, 7)
+        Me.Button5.Location = New System.Drawing.Point(1656, 7)
         Me.Button5.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(148, 31)
+        Me.Button5.Size = New System.Drawing.Size(163, 31)
         Me.Button5.TabIndex = 11
-        Me.Button5.Text = "VIEW PROFILE"
+        Me.Button5.Text = "ORDER STATUS"
         Me.Button5.UseVisualStyleBackColor = False
         '
         'ComboBox1
@@ -337,9 +369,9 @@ Partial Class Form3
         Me.Label15.ForeColor = System.Drawing.Color.FromArgb(CType(CType(148, Byte), Integer), CType(CType(93, Byte), Integer), CType(CType(155, Byte), Integer))
         Me.Label15.Location = New System.Drawing.Point(32, 231)
         Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(99, 32)
+        Me.Label15.Size = New System.Drawing.Size(103, 32)
         Me.Label15.TabIndex = 7
-        Me.Label15.Text = "12345"
+        Me.Label15.Text = "Arwen"
         '
         'Button4
         '
@@ -385,7 +417,7 @@ Partial Class Form3
         Me.Panel6.Controls.Add(Me.Button4)
         Me.Panel6.Controls.Add(Me.Label15)
         Me.Panel6.Controls.Add(Me.PictureBox4)
-        Me.Panel6.Location = New System.Drawing.Point(37, 624)
+        Me.Panel6.Location = New System.Drawing.Point(1112, 135)
         Me.Panel6.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Panel6.Name = "Panel6"
         Me.Panel6.Size = New System.Drawing.Size(304, 453)
@@ -393,54 +425,20 @@ Partial Class Form3
         '
         'PictureBox4
         '
-        Me.PictureBox4.BackgroundImage = Global.Digital_Art_Application.My.Resources.Resources.purple1
-        Me.PictureBox4.Location = New System.Drawing.Point(29, 28)
+        Me.PictureBox4.Location = New System.Drawing.Point(21, 24)
         Me.PictureBox4.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.PictureBox4.Name = "PictureBox4"
         Me.PictureBox4.Size = New System.Drawing.Size(243, 190)
+        Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox4.TabIndex = 0
         Me.PictureBox4.TabStop = False
         '
-        'PictureBox3
-        '
-        Me.PictureBox3.Image = Global.Digital_Art_Application.My.Resources.Resources.Screenshot_2026_11_05_143436
-        Me.PictureBox3.Location = New System.Drawing.Point(29, 28)
-        Me.PictureBox3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(243, 190)
-        Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox3.TabIndex = 0
-        Me.PictureBox3.TabStop = False
-        '
-        'PictureBox2
-        '
-        Me.PictureBox2.Image = Global.Digital_Art_Application.My.Resources.Resources.Screenshot_2026_11_05_135942
-        Me.PictureBox2.Location = New System.Drawing.Point(29, 28)
-        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(243, 190)
-        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox2.TabIndex = 0
-        Me.PictureBox2.TabStop = False
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.BackgroundImage = Global.Digital_Art_Application.My.Resources.Resources.purple1
-        Me.PictureBox1.Image = Global.Digital_Art_Application.My.Resources.Resources.Copy_of_LARO_NG_LUPA_FAQ__10_1
-        Me.PictureBox1.Location = New System.Drawing.Point(29, 28)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(243, 190)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox1.TabIndex = 0
-        Me.PictureBox1.TabStop = False
-        '
-        'Form3
+        'home_buyer
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(222, Byte), Integer), CType(CType(236, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1099, 949)
+        Me.ClientSize = New System.Drawing.Size(1924, 1055)
         Me.Controls.Add(Me.Panel6)
         Me.Controls.Add(Me.Panel5)
         Me.Controls.Add(Me.Panel4)
@@ -448,24 +446,24 @@ Partial Class Form3
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
         Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Name = "Form3"
+        Me.Name = "home_buyer"
         Me.Text = "Form3"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel3.ResumeLayout(False)
         Me.Panel3.PerformLayout()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel4.ResumeLayout(False)
         Me.Panel4.PerformLayout()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel5.ResumeLayout(False)
         Me.Panel5.PerformLayout()
         Me.Panel6.ResumeLayout(False)
         Me.Panel6.PerformLayout()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -480,10 +478,10 @@ Partial Class Form3
     Friend WithEvents Panel2 As Panel
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Label2 As Label
-    Friend WithEvents Button1 As Button
+    Friend WithEvents viewportfolio_soapy As Button
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Dim portfolio As New Form4()
+    Private Sub viewportfolio_soapy_Click(sender As Object, e As EventArgs) Handles viewportfolio_soapy.Click
+        Dim portfolio As New soapy_portfolio()
         portfolio.Show()
         Me.Hide()
     End Sub
@@ -491,13 +489,13 @@ Partial Class Form3
     Friend WithEvents Label3 As Label
     Friend WithEvents Panel3 As Panel
     Friend WithEvents Label4 As Label
-    Friend WithEvents Button2 As Button
+    Friend WithEvents viewportfolio_thynn As Button
     Friend WithEvents Label5 As Label
     Friend WithEvents PictureBox2 As PictureBox
 
     Private Sub Label5_Click(sender As Object, e As EventArgs) Handles Label5.Click
 
-        Dim categoryPage As New Form4()
+        Dim categoryPage As New home_buyer()
         categoryPage.Show()
         Me.Hide()
 
@@ -520,7 +518,7 @@ Partial Class Form3
     End Sub
     Private Sub login_button_Click(sender As Object, e As EventArgs) Handles login_button.Click
 
-        Dim categoryPage As New Form2()
+        Dim categoryPage As New option_page()
         categoryPage.Show()
         Me.Hide()
     End Sub
@@ -537,7 +535,9 @@ Partial Class Form3
     End Sub
 
     Private Sub Form3_Load_1(sender As Object, e As EventArgs) Handles MyBase.Load
+        Me.FormBorderStyle = FormBorderStyle.None
 
+        Me.WindowState = FormWindowState.Maximized
     End Sub
 
     Private Sub Form3_Load(sender As Object, e As EventArgs) Handles MyBase.Load
